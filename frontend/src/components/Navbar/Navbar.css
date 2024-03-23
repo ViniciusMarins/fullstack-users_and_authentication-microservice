@@ -1,0 +1,51 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  background-color: rgba(228, 228, 231, 1);
+}
+
+.navbar-links {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.navbar-links li {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: rgba(107, 33, 168, 1);
+  position: relative;
+}
+
+.navbar-links li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgba(107, 33, 168, 1);
+  transition: width 0.3s ease;
+}
+
+.navbar-links li:hover::after {
+  width: 100%;
+}
+
+.profile-icon {
+  font-size: 2.4rem;
+  color: rgba(107, 33, 168, 1);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.profile-icon:hover {
+  transform: scale(1.09);
+}

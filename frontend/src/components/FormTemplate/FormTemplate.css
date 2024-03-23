@@ -1,0 +1,93 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.form h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  flex-grow: 0.4;
+  margin-bottom: 25px;
+}
+
+.form .campo-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+  position: relative;
+}
+
+.form .campo-container label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.form .campo-container input {
+  padding: 13px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.form .campo-container input:hover {
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.form .link-password {
+  color: rgba(107, 33, 168, 1);
+  font-weight: 700;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.form button {
+  padding: 13px;
+  font-size: 1rem;
+  background-color: rgba(107, 33, 168, 1);
+  box-shadow: 0 5px 10px 0 rgba(145, 158, 171, 0.7);
+  color: white;
+  font-weight: 500;
+  margin: 10px 0px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form button:hover {
+  background-color: rgb(137 55 179);
+}
+
+.form p {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.form p a {
+  color: rgba(107, 33, 168, 1);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.form .link-password:hover,
+.form p a:hover {
+  text-decoration: underline;
+}
+
+.span-error {
+  color: rgb(206, 0, 0);
+  font-size: 0.85rem;
+  font-weight: 400;
+  margin-top: 4px;
+}
+
+.icon-password {
+  font-size: 1.2rem;
+  color: rgb(112, 122, 132);
+  position: absolute;
+  right: 15px;
+  top: 40px;
+  cursor: pointer;
+}

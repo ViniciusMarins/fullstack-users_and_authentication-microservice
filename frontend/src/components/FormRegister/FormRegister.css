@@ -1,0 +1,23 @@
+.content-container {
+  position: relative;
+}
+
+.container-back-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  font-size: 1.6rem !important;
+  border-radius: 50%;
+  padding: 5px;
+  color: black;
+  transition: all 0.2s ease;
+}
+
+.container-back-arrow:hover {
+  background-color: rgb(137 55 179);
+  color: white;
+}
