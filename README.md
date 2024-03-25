@@ -21,7 +21,7 @@ npm run dev
 
 ### Backend
 
-- Atenção para criar seu próprio arquivo para conexão com o banco de dados **application.properties** no path **backend/src/main** seguindo o seguinte padrão de arquivo (CONEXÃO MYSQL)
+- Atenção para criar seu próprio arquivo para conexão com o banco de dados **application.properties** no path **backend/src/main** seguindo o seguinte padrão de arquivo a seguir (CONEXÃO MYSQL):
 
 ```mysql
 spring.datasource.password = "password"
@@ -45,7 +45,7 @@ headers: {
 
 ### Rotas sem autenticação
 
-#### **Realizar o login**
+#### >>**Realizar o login**<<
 
 ```http
   POST http://localhost:8080/login
@@ -60,9 +60,9 @@ Body Request Example
 }
 ```
 
-#### **Cadastrar um usuário**
+#### >>**Cadastrar um usuário**<<
 
-```http
+```bash
   POST http://localhost:8080/users
 ```
 
@@ -79,15 +79,15 @@ Body Request Example
 
 ### Rotas com autenticação
 
-#### **Listar usuários**
+#### >>**Listar usuários**<<
 
-```http
+```bash
   GET http://localhost:8080/users
 ```
 
-#### **Atualizar um usuário**
+#### >>**Atualizar um usuário**<<
 
-```http
+```bash
   PUT http://localhost:8080/users
 ```
 
@@ -103,9 +103,9 @@ Body Request Example
 }
 ```
 
-#### **Excluir um usuário**
+#### >>**Excluir um usuário**<<
 
-```http
+```bash
   DELETE http://localhost:8080/users/${id}
 ```
 
@@ -113,9 +113,9 @@ Body Request Example
 | :-------- | :------- | :------------ |
 | `id`      | `number` | ID do usuário |
 
-#### **Retornar usuário por email**
+#### >>**Retornar usuário por email**<<
 
-```http
+```bash
   DELETE http://localhost:8080/users/${email}
 ```
 
