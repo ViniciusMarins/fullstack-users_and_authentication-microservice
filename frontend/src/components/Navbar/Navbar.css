@@ -3,7 +3,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 25px;
-  background-color: rgba(228, 228, 231, 1);
+  background-color: white;
+  border-radius: 10px;
 }
 
 .navbar-links {
@@ -48,4 +49,41 @@
 
 .profile-icon:hover {
   transform: scale(1.09);
+}
+
+.container-profile-icon {
+  position: relative;
+  z-index: 1;
+}
+
+.wrapper {
+  display: none;
+  padding-top: 15px;
+  position: absolute;
+  bottom: -85px;
+  left: -30px;
+  cursor: default;
+  z-index: -1;
+}
+
+.wrapper-item {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  cursor: pointer;
+  gap: 5px;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(208, 208, 208);
+  transition: all 0.3s ease;
+  margin-bottom: 1px;
+}
+
+.wrapper-item:hover {
+  background-color: rgb(190, 190, 190);
+}
+
+.container-profile-icon:hover .wrapper {
+  display: block;
 }

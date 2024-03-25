@@ -52,7 +52,7 @@ public class UserController {
 		userService.createUser(user);
 		return ResponseEntity.status(201).body("Usuário criado com sucesso.");
 	}
-
+	
 	@PutMapping("/users")
 	public ResponseEntity<User> editUser(@Valid @RequestBody User user) {
 

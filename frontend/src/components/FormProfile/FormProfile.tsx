@@ -9,9 +9,14 @@ import { User } from "../../types/AppTypes";
 type PropsType = {
   userLogged: User;
   submitUpdateProfile: (data: any, resetField: any) => void;
+  deleteAccount: () => void;
 };
 
-function FormProfile({ userLogged, submitUpdateProfile }: PropsType) {
+function FormProfile({
+  userLogged,
+  submitUpdateProfile,
+  deleteAccount,
+}: PropsType) {
   const [isPasswordVisible, setIsPasswordVisible] = useState<boolean>(false);
 
   const schema = yup.object().shape({
@@ -69,9 +74,18 @@ function FormProfile({ userLogged, submitUpdateProfile }: PropsType) {
       className="form"
       onSubmit={handleSubmit((data) => submitUpdateProfile(data, resetField))}
     >
-      <h1 style={{ marginTop: "10px", marginBottom: "10px" }}>
-        Dados cadastrais
-      </h1>
+      <header
+        className="header-form-profile"
+        style={{
+          marginTop: "10px !important",
+          marginBottom: "10px !important",
+        }}
+      >
+        <h1 style={{ margin: "0 !important" }}>Dados cadastrais</h1>
+        <button type="button" className="delete-button" onClick={deleteAccount}>
+          Excluir conta
+        </button>
+      </header>
 
       <div className="campo-container">
         <label htmlFor="name">Name</label>

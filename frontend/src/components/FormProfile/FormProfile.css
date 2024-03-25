@@ -2,3 +2,19 @@
   padding: 0;
   box-shadow: none;
 }
+
+.header-form-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-button {
+  background-color: rgb(131, 15, 15) !important;
+  font-size: 0.8rem !important;
+  border: none !important;
+}
+
+.delete-button:hover {
+  background-color: rgb(159, 20, 20) !important;
+}
