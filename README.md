@@ -47,7 +47,7 @@ headers: {
 
 #### >>**Realizar o login**<<
 
-```http
+```bash
   POST http://localhost:8080/login
 ```
 
