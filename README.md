@@ -123,7 +123,7 @@ Body Request Example
 
 ## Screenshots / Funcionalidades
 
-<p style="text-align: justify;"> O sistema permite a realização de login, cadastro, atualização de dados e exclusão de conta por parte do usuário. Além disso, possui rotas dinâmicas para navegação na aplicação. Toda a interface de usuário é responsiva para dispositivos móveis. </p>
+<p style="text-align: justify;"> O sistema permite a realização de login, cadastro, atualização de dados e exclusão de conta por parte do usuário. Além disso, possui rotas dinâmicas para navegação na aplicação e rotas protegidas por autenticação. Toda a interface de usuário é responsiva para dispositivos móveis. </p>
 
 ### **Página de Login**
 
