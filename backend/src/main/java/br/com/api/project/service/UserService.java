@@ -17,8 +17,8 @@ import jakarta.validation.Valid;
 @Service
 public class UserService {
 
-	private IUser repository;
-	private PasswordEncoder passwordEncoder;
+	private final IUser repository;
+	private final PasswordEncoder passwordEncoder;
 
 	public UserService(IUser repository) {
 		this.repository = repository;
