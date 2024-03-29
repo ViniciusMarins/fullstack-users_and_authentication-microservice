@@ -2,8 +2,6 @@
 
 Projeto Fullstack para gerenciamento e autenticação segura de usuários com token JWT.
 
-[>> Link para a aplicação <<]()
-
 ## Stack
 
 **Tecnologias:** Reactjs, Java Spring, MySQL, TypeScript, Nodejs, HTML5 e CSS3;
@@ -21,7 +19,7 @@ npm run dev
 
 ### Backend
 
-- Atenção para criar seu próprio arquivo para conexão com o banco de dados **application.properties** no path **backend/src/main** seguindo o seguinte padrão de arquivo a seguir (CONEXÃO MYSQL):
+- Atenção para criar seu próprio arquivo para conexão com o banco de dados **application.properties** no path **backend/src/main/resources** seguindo o seguinte padrão de arquivo a seguir (CONEXÃO MYSQL):
 
 ```mysql
 spring.datasource.password = "password"
@@ -122,6 +120,22 @@ Body Request Example
 | Parâmetro | Tipo     | Descrição        |
 | :-------- | :------- | :--------------- |
 | `email`   | `string` | email do usuário |
+
+## Screenshots / Funcionalidades
+
+<p style="text-align: justify;"> O sistema permite a realização de login, cadastro, atualização de dados e exclusão de conta por parte do usuário. Além disso, possui rotas dinâmicas para navegação na aplicação. Toda a interface de usuário é responsiva para dispositivos móveis. </p>
+
+### **Página de Login**
+
+<img src="to_github/login-page.png">
+
+### **Página de Cadastro**
+
+<img src="to_github/register-page.png">
+
+### **Página de Profile do Usuário**
+
+<img src="to_github/profile-page.png">
 
 ## Bibliotecas Utilizadas
 
