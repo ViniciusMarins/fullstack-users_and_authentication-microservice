@@ -19,7 +19,7 @@ npm run dev
 
 ### Backend
 
-- Atenção para criar seu próprio arquivo para conexão com o banco de dados **application.properties** no path **backend/src/main/resources** seguindo o seguinte padrão de arquivo a seguir (CONEXÃO MYSQL):
+- Atenção para criar seu próprio arquivo para conexão com o banco de dados **application.properties** no path **backend/src/main/resources** seguindo o padrão de arquivo a seguir (CONEXÃO MYSQL):
 
 ```mysql
 spring.datasource.password = "password"
